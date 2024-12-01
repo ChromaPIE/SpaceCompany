@@ -375,10 +375,10 @@ var Game = (function() {
         if (timeLeft <= 15000) {
             element.show();
             if(timeLeft <= 5000){
-                element.text((timeLeft / 1000).toFixed(1) + "后自动保存");
+                element.text((timeLeft / 1000).toFixed(1) + " 秒后自动保存");
             }
             else{
-                element.text((timeLeft / 1000).toFixed(0) + "后自动保存");
+                element.text((timeLeft / 1000).toFixed(0) + " 秒后自动保存");
             }
         } else {
             element.hide();

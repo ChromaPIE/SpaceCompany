@@ -11,8 +11,8 @@ Game.buildingData = (function () {
 
     // Energy
     instance.energyT1 = $.extend({}, baseProducerBuilding, {
-        name: 'Charcoal Engine',
-        desc: 'Burns Charcoal to produce a steady source of Energy.',
+        name: '木炭引擎',
+        desc: '燃烧木炭来获取稳定能源。',
         resource: 'energy',
         resourcePerSecond: {
             'energy': 2,
