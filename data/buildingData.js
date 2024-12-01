@@ -450,8 +450,8 @@ Game.buildingData = (function () {
 
     // Charcoal
     instance.charcoalT1 = $.extend({}, baseProducerBuilding, {
-        name: 'Woodburner',
-        desc: 'Build a shovel for your woodburner.',
+        name: '烧木工',
+        desc: '给烧木工带把锹。',
         resource: 'charcoal',
         resourcePerSecond: {
             'wood': -2,
@@ -464,8 +464,8 @@ Game.buildingData = (function () {
     });
 
     instance.charcoalT2 = $.extend({}, baseProducerBuilding, {
-        name: 'Furnace',
-        desc: 'Furnaces use electric heaters to produce heat to turn Wood into Charcoal. Because of the increased heat, the process is more efficient.',
+        name: '熔炉',
+        desc: '熔炉采用电力加热器将木头烧制成木炭。由能量驱动的热量更高，因此带来了更高的效率。',
         resource: 'charcoal',
         resourcePerSecond: {
             'energy': -3,

@@ -9,7 +9,7 @@ Game.resourceCategoryData = (function () {
 
     instance.earth = {
         class: 'collapseEarth',
-        title: 'Earth Resources',
+        title: '地球资源',
         category: 'earth'
     };
 
@@ -79,8 +79,8 @@ Game.resourceData = (function () {
      ********************/
 
     instance.oil = {
-        name: 'Oil',
-        desc: 'Oil is pumped up from the ground and is used to build Tier 2 resource gatherers.',
+        name: '石油',
+        desc: '从地底钻取的石油是 2 级资源获取设备的必要材料。',
         icon: 'oilIcon',
         category: 'earth',
         baseCapacity: 50,

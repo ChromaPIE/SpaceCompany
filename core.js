@@ -153,14 +153,14 @@ function setTimeUntilDisplayTest(targetLimitType, targetLimitTime, current, max,
 		targetTimeElement.setText(formattedTimeTest);
 
 		if(isDraining){
-			targetTypeElement.setText('empty');
+			targetTypeElement.setText('耗尽');
 			targetTimeElement.addClass('red');
 		} else {
-			targetTypeElement.setText('full');
+			targetTypeElement.setText('满载');
 			targetTimeElement.removeClass('red');
 		}
 	} else {
-		targetTypeElement.setText('full');
+		targetTypeElement.setText('满载');
 		targetTimeElement.setText('N/A');
 	}
 }
