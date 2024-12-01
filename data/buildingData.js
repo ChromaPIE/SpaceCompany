@@ -450,8 +450,8 @@ Game.buildingData = (function () {
 
     // Charcoal
     instance.charcoalT1 = $.extend({}, baseProducerBuilding, {
-        name: '烧木工',
-        desc: '给烧木工带把锹。',
+        name: '烧木炉',
+        desc: '给烧木炉多备把锹。',
         resource: 'charcoal',
         resourcePerSecond: {
             'wood': -2,

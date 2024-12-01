@@ -15,7 +15,7 @@ Game.resourceCategoryData = (function () {
 
     instance.innerSol = {
         class: 'collapseInnerPlanetary',
-        title: 'Inner Planetary Resources',
+        title: '近地行星资源',
         category: 'innerSol'
     };
 
