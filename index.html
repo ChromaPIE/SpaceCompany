@@ -111,9 +111,9 @@
 		<li role="presentation" class="active"><a href="#resources" aria-controls="resources" role="tab" data-toggle="tab" onclick="tabClicked('resources')"><div id="resourcesTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 资源</a></li>
 		<li role="presentation" id="researchTab" class="hidden"><a href="#research" aria-controls="research" role="tab" data-toggle="tab" onclick="tabClicked('research')"><div id="researchTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 研究</a></li>
     	<li role="presentation" id="solarSystemTab" class="hidden"><a href="#solarSystem" aria-controls="solarSystem" role="tab" data-toggle="tab"onclick="tabClicked('solarSystem')"><div id="solarSystemTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 太阳系</a></li>
-    	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Wonders</a></li>
-    	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Sol Center</a></li>
-    	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> Machines</a></li>
+    	<li role="presentation" id="wonderTab" class="hidden"><a href="#wonder" aria-control="wonder" role="tab" data-toggle="tab"onclick="tabClicked('wonder')"><div id="wonderTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 神迹</a></li>
+    	<li role="presentation" id="solCenterTopTab" class="hidden"><a href="#solCenterPage" aria-control="solCenterPage" role="tab" data-toggle="tab"onclick="tabClicked('solCenter')"><div id="solCenterTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 太阳系中心</a></li>
+    	<li role="presentation" id="machineTopTab" style="display: none;"><a href="#machineTab" aria-control="machineTab" role="tab" data-toggle="tab"onclick="tabClicked('machine')"><div id="machineTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 机器</a></li>
     	<li role="presentation" class="pull-right"><a href="#help" aria-control="help" role="tab" data-toggle="tab"><div class="glyphicon glyphicon-info-sign"></div> 帮助/常见问题</a></li>
     	<li role="presentation" class="pull-right"><a href="#more" aria-control="more" role="tab" data-toggle="tab" onclick="tabClicked('more')"><div id="moreTabGlyph" class="glyphicon glyphicon-exclamation-sign hidden"></div> 更多……</a></li>
 	</ul>
@@ -584,7 +584,7 @@
 									<br>
 									<br>
 									<hide class="gainButton">
-										<div onclick="gainResource('plasma')" class="btn btn-default">Gain <span id="plasmaGain">1</span></div>
+										<div onclick="gainResource('plasma')" class="btn btn-default">获取 <span id="plasmaGain">1</span></div>
 										<br>
 										<br>
 									</hide>
@@ -707,46 +707,46 @@
 							<tr id="batteries" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Batteries: <span id="battery">0</span>
+										电池：<span id="battery">0</span>
 									</h3>
 									<span>
-										Batteries increase your energy storage by 50,000 per battery built.
+										每块电池可将最大储能值提升 50,000。
 										<br>
-										Costs <span id="batteryMetalCost">50,000</span> Metal, <span id="batteryGemCost">50,000</span> Gems, <span id="batteryLunariteCost">30,000</span> Lunarite.
+										造价 <span id="batteryMetalCost">50,000</span> 块金属、<span id="batteryGemCost">50,000</span> 块宝石、<span id="batteryLunariteCost">30,000</span> 块月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBattery()" class="btn btn-default">Get Battery</button>
+									<button onclick="getBattery()" class="btn btn-default">制造电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT2" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T2 Batteries: <span id="batteryT2">0</span>
+										二级电池：<span id="batteryT2">0</span>
 									</h3>
 									<span>
-										Tier 2 Batteries increase your energy storage by 500,000 per battery built.
+										每块二级电池可将最大储能值提升 500,000。
 										<br>
-										Costs <span id="batteryT2MetalCost">550,000</span> Metal, <span id="batteryT2GemCost">550,000</span> Gems, <span id="batteryT2LunariteCost">330,000</span> Lunarite.
+										造价 <span id="batteryT2MetalCost">550,000</span> 块金属、<span id="batteryT2GemCost">550,000</span> 块宝石、<span id="batteryT2LunariteCost">330,000</span> 块月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT2()" class="btn btn-default">Get Battery T2</button>
+									<button onclick="getBatteryT2()" class="btn btn-default">制造二级电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT3" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										T3 Batteries: <span id="batteryT3">0</span>
+										三级电池：<span id="batteryT3">0</span>
 									</h3>
 									<span>
-										Tier 3 Batteries increase your energy storage by 5,000,000 per battery built.
+										每块二级电池可将最大储能值提升 5,000,000。
 										<br>
-										Costs <span id="batteryT3MetalCost">5,500,000</span> Metal, <span id="batteryT3GemCost">5,500,000</span> Gems, <span id="batteryT3LunariteCost">3,300,000</span> Lunarite.
+										造价 <span id="batteryT3MetalCost">5,500,000</span> 块金属、<span id="batteryT3GemCost">5,500,000</span> 块宝石、<span id="batteryT3LunariteCost">3,300,000</span> 块月岩。
 									</span>
 									<br>
 									<br>
-									<button onclick="getBatteryT3()" class="btn btn-default">Get Battery T3</button>
+									<button onclick="getBatteryT3()" class="btn btn-default">制造三级电池</button>
 								</td>
 							</tr>
 							<tr id="batteriesT4" class="hidden">
@@ -787,7 +787,7 @@
 									<span>
 										燃烧木炭来获取稳定能源。
 										<br>
-										每台引擎每秒消耗 1 块木炭产生 <span id="charcoalEngineOutput">2</span> 单位能量。
+										每台引擎每秒消耗 1 块木炭，产生 <span id="charcoalEngineOutput">2</span> 单位能量。
 										<br>
 										造价 <span id="charcoalEngineMetalCost">50</span> 块金属、<span id="charcoalEngineGemCost">25</span> 块宝石。
 									</span>
@@ -818,19 +818,19 @@
 							<tr id="methanePower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Methane Power Stations: <span id="methaneStation">0</span>
+										甲烷发电站：<span id="methaneStation">0</span>
 									</h3>
 									<span>
-										Burn powerful methane from Venus to satisfy all your power needs.
+										燃烧产自金星的甲烷，满足你所有的能量需求。
 										<br>
-										Each Power Station produces 23 Energy and uses 6 methane per second.
+										每座发电站每秒消耗 6 单位甲烷，产生 23 单位能量。
 										<br>
-										Costs <span id="methaneStationLunariteCost">110</span> Lunarite, <span id="methaneStationTitaniumCost">90</span> Titanium.
+										造价 <span id="methaneStationLunariteCost">110</span> 块月岩、<span id="methaneStationTitaniumCost">90</span> 块钛。
 									</span>
 									<br>
 									<br>
-									<button onclick="getMethaneStation()" class="btn btn-default">Get Methane Power Station</button>
-									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">Destroy Methane Station</button>
+									<button onclick="getMethaneStation()" class="btn btn-default">建造甲烷发电站</button>
+									<button onclick="destroyMachine('methaneStation')" class="btn btn-default destroy hidden">拆毁甲烷发电站</button>
 								</td>
 							</tr>
 							<tr id="nuclearPower" class="hidden">
@@ -872,19 +872,19 @@
 							<tr id="fusionPower" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										Fusion Reactor: <span id="fusionReactor">0</span>
+										聚变反应堆：<span id="fusionReactor">0</span>
 									</h3>
 									<span>
-										In a fusion reaction, Energy is released when two light atomic nuclei are fused together to form one heavier atom. This is the same reaction that occurs in stars and produces a lot of power.
+										两个轻原子核聚合为一个更重的原子，是为聚变反应。这种反应每时每刻都发生在千万星辰之中，喷涌出巨大的能量。
 										<br>
-										Each Power Station produces 273 Energy and uses 10 Hydrogen and 10 Helium per second.
+										每座反应堆每秒消耗 10 单位氢和 273 单位氦，产生 273 单位能量。
 										<br>
-										Costs <span id="fusionReactorLunariteCost">30,000</span> Lunarite, <span id="fusionReactorTitaniumCost">20,000</span> Titanium, <span id="fusionReactorSiliconCost">15,000</span> Silicon.
+										造价 <span id="fusionReactorLunariteCost">30,000</span> 块月岩、<span id="fusionReactorTitaniumCost">20,000</span> 块钛、<span id="fusionReactorSiliconCost">15,000</span> 块硅。
 									</span>
 									<br>
 									<br>
-									<button onclick="getFusionReactor()" class="btn btn-default">Get Fusion Reactor</button>
-									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">Destroy Fusion Reactor</button>
+									<button onclick="getFusionReactor()" class="btn btn-default">建造聚变反应堆</button>
+									<button onclick="destroyMachine('fusionReactor')" class="btn btn-default destroy hidden">拆毁聚变反应堆</button>
 								</td>
 							</tr>
 						</table>
@@ -904,7 +904,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('uranium')" class="btn btn-default">Gain <span id="uraniumGain">1</span></div>
+									<div onclick="gainResource('uranium')" class="btn btn-default">获取 <span id="uraniumGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -913,7 +913,7 @@
 							<tr id="uraniumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Uranium storage size to <span id="uraniumNextStorage">100</span>.
@@ -1042,14 +1042,14 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('oil')" class="btn btn-default">Gain <span id="oilGain">1</span></div>
+									<div onclick="gainResource('oil')" class="btn btn-default">获取 <span id="oilGain">1</span></div>
 									</hide>
 								</td>
 							</tr>
 							<tr id="oilStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										将石油的最大存储量拓展至 <span id="oilNextStorage">100</span>。
@@ -1176,7 +1176,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('metal')" class="btn btn-default">Gain <span id="metalGain">1</span></div>
+									<div onclick="gainResource('metal')" class="btn btn-default">获取 <span id="metalGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1185,7 +1185,7 @@
 							<tr id="metalStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Metal storage size to <span id="metalNextStorage">100</span>.
@@ -1314,7 +1314,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('gem')" class="btn btn-default">Gain <span id="gemGain">1</span></div>
+									<div onclick="gainResource('gem')" class="btn btn-default">获取 <span id="gemGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1323,7 +1323,7 @@
 							<tr id="gemStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your gem storage size to <span id="gemNextStorage">100</span>.
@@ -1462,7 +1462,7 @@
 							<tr id="charcoalStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Charcoal storage size to <span id="charcoalNextStorage">100</span>.
@@ -1601,7 +1601,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('wood')" class="btn btn-default">Gain <span id="woodGain">1</span></div>
+									<div onclick="gainResource('wood')" class="btn btn-default">获取 <span id="woodGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1610,7 +1610,7 @@
 							<tr id="woodStorageUpgrade" class="hidden">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your wood storage size to <span id="woodNextStorage">100</span>.
@@ -1739,7 +1739,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('silicon')" class="btn btn-default">Gain <span id="siliconGain">1</span></div>
+									<div onclick="gainResource('silicon')" class="btn btn-default">获取 <span id="siliconGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1748,7 +1748,7 @@
 							<tr id="siliconStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Silicon storage size to <span id="siliconNextStorage">100</span>.
@@ -1877,7 +1877,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('lunarite')" class="btn btn-default">Gain <span id="lunariteGain">1</span></div>
+									<div onclick="gainResource('lunarite')" class="btn btn-default">获取 <span id="lunariteGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -1886,7 +1886,7 @@
 							<tr id="lunariteStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Lunarite storage size to <span id="lunariteNextStorage">100</span>.
@@ -2015,7 +2015,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('methane')" class="btn btn-default">Gain <span id="methaneGain">1</span></div>
+									<div onclick="gainResource('methane')" class="btn btn-default">获取 <span id="methaneGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2024,7 +2024,7 @@
 							<tr id="methaneStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your methane storage size to <span id="methaneNextStorage">100</span>.
@@ -2153,7 +2153,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('titanium')" class="btn btn-default">Gain <span id="titaniumGain">1</span></div>
+									<div onclick="gainResource('titanium')" class="btn btn-default">获取 <span id="titaniumGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2162,7 +2162,7 @@
 							<tr id="titaniumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Titanium storage size to <span id="titaniumNextStorage">100</span>.
@@ -2291,7 +2291,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('gold')" class="btn btn-default">Gain <span id="goldGain">1</span></div>
+									<div onclick="gainResource('gold')" class="btn btn-default">获取 <span id="goldGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2300,7 +2300,7 @@
 							<tr id="goldStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Gold storage size to <span id="goldNextStorage">100</span>.
@@ -2429,7 +2429,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('silver')" class="btn btn-default">Gain <span id="silverGain">1</span></div>
+									<div onclick="gainResource('silver')" class="btn btn-default">获取 <span id="silverGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2438,7 +2438,7 @@
 							<tr id="silverStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your silver storage size to <span id="silverNextStorage">100</span>.
@@ -2566,7 +2566,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('lava')" class="btn btn-default">Gain <span id="lavaGain">1</span></div>
+									<div onclick="gainResource('lava')" class="btn btn-default">获取 <span id="lavaGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2575,7 +2575,7 @@
 							<tr id="lavaStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Lava storage size to <span id="lavaNextStorage">100</span>.
@@ -2696,15 +2696,15 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Hydrogen
+										氢
 									</h2>
 									<span>
-										Hydrogen is extremely common on gas giants such as Jupiter and Saturn.
+										氢大量存在于木星和土星等气体巨行星之上。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('hydrogen')" class="btn btn-default">Gain <span id="hydrogenGain">1</span></div>
+									<div onclick="gainResource('hydrogen')" class="btn btn-default">获取 <span id="hydrogenGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2713,7 +2713,7 @@
 							<tr id="hydrogenStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Hydrogen storage size to <span id="hydrogenNextStorage">100</span>.
@@ -2842,7 +2842,7 @@
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('helium')" class="btn btn-default">Gain <span id="heliumGain">1</span></div>
+									<div onclick="gainResource('helium')" class="btn btn-default">获取 <span id="heliumGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2851,7 +2851,7 @@
 							<tr id="heliumStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Helium storage size to <span id="heliumNextStorage">100</span>.
@@ -2972,15 +2972,15 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Ice
+										冰
 									</h2>
 									<span>
-										Ice, although it can be collected on Earth, is not nearly as profitable as flying to Pluto and back with space craft full of the stuff. It is mainly used for super-cooling technology necessary for Tier 4 machines.
+										地球上也能制冰，但远没有飞去冥王星带着满满一飞船这玩意儿回来来得划算。应用于四级机器的超冷却技术将是它首要的用武之地。
 									</span>
 									<hide class="gainButton">
 									<br>
 									<br>
-									<div onclick="gainResource('ice')" class="btn btn-default">Gain <span id="iceGain">1</span></div>
+									<div onclick="gainResource('ice')" class="btn btn-default">获取 <span id="iceGain">1</span></div>
 									</hide>
 									<br>
 									<br>
@@ -2989,7 +2989,7 @@
 							<tr id="iceStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Ice storage size to <span id="iceNextStorage">100</span>.
@@ -3130,7 +3130,7 @@
 							<tr id="meteoriteStorageUpgrade">
 								<td>
 									<h3 class="default btn-link">
-										存储空间升级
+										储量升级
 									</h3>
 									<span>
 										Upgrade your Meteorite storage size to <span id="meteoriteNextStorage">100</span>.

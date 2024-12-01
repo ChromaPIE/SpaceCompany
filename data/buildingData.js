@@ -81,8 +81,8 @@ Game.buildingData = (function () {
     });
 
     instance.energyT6 = $.extend({}, baseProducerBuilding, {
-        name: 'Fusion Reactor',
-        desc: 'In a fusion reaction, Energy is released when two light atomic nuclei are fused together to form one heavier atom. This is the same reaction that occurs in stars and produces a lot of power.',
+        name: '聚变反应堆',
+        desc: '两个轻原子核聚合为一个更重的原子，是为聚变反应。这种反应每时每刻都发生在千万星辰之中，喷涌出巨大的能量。',
         resource: 'energy',
         resourcePerSecond: {
             'energy': 273,

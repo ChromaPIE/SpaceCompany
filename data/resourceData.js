@@ -187,8 +187,8 @@ Game.resourceData = (function () {
      ******************************/
 
     instance.hydrogen = {
-        name: 'Hydrogen',
-        desc: 'Hydrogen is extremely common on gas giants such as Jupiter and Saturn.',
+        name: '氢',
+        desc: '氢大量存在于木星和土星等气体巨行星之上。',
         icon: 'hydrogenIcon',
         category: 'outerSol',
         baseCapacity: 50,
