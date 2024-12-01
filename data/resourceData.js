@@ -39,8 +39,8 @@ Game.resourceData = (function () {
      *********************/
 
     instance.energy = {
-        name: 'Energy',
-        desc: 'Energy is created by power sources such as steam engines, solar power and advances even to fusion power and nuclear energy. The maximum you can hold to start with is 100,000 Energy, but batteries are unlockable which can increase this.',
+        name: '能量',
+        desc: '能量可通过蒸汽引擎、太阳能乃至聚变等核能途径产出。初始的最大储能值为 100,000，但后续可通过解锁电池来扩展。',
         icon: 'energyIcon',
         category: 'energy',
         baseCapacity: 50000,

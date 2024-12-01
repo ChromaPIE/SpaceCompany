@@ -375,10 +375,10 @@ var Game = (function() {
         if (timeLeft <= 15000) {
             element.show();
             if(timeLeft <= 5000){
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(1) + " seconds");
+                element.text((timeLeft / 1000).toFixed(1) + "后自动保存");
             }
             else{
-                element.text("Autosaving in " + (timeLeft / 1000).toFixed(0) + " seconds");
+                element.text((timeLeft / 1000).toFixed(0) + "后自动保存");
             }
         } else {
             element.hide();
