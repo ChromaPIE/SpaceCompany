@@ -48,8 +48,8 @@ Game.resourceData = (function () {
     };
 
     instance.plasma = {
-        name: 'Plasma',
-        desc: 'Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company.',
+        name: '等离子体',
+        desc: '等离子体是物质的第四种形态，也是应用于公司中各类四级机器和大型太空结构的极限能量来源。初始的最大等离子体储量为 100,000，但后续可通过解锁等离子体存储单元来扩展。',
         icon: 'plasmaIcon',
         category: 'energy',
         baseCapacity: 50,
@@ -174,8 +174,8 @@ Game.resourceData = (function () {
     };
 
     instance.silver = {
-        name: 'Silver',
-        desc: 'Silver is another metal most commonly found in the asteroid belt.',
+        name: '银',
+        desc: '富集于小行星带之中的一种金属材料。',
         icon: 'silverIcon',
         category: 'innerSol',
         baseCapacity: 50,

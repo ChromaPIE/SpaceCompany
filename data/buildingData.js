@@ -98,8 +98,8 @@ Game.buildingData = (function () {
 
     // Plasma
     instance.plasmaT1 = $.extend({}, baseProducerBuilding, {
-        name: 'Super-Heater',
-        desc: 'The Super-Heater throws electricity at Hydrogen to turn it into a plasmatic substance.',
+        name: '超高温加热器',
+        desc: '超高温加热器将能量抛射向氢，使其转化为等离子物质。',
         resource: 'plasma',
         resourcePerSecond: {
             'energy': -1000,
@@ -271,8 +271,8 @@ Game.buildingData = (function () {
 
     // Oil
     instance.oilT1 = $.extend({}, baseProducerBuilding, {
-        name: 'Small Pump',
-        desc: 'Build a small pump to extract Oil from the ground.',
+        name: '小型油泵',
+        desc: '制造一台小型油泵，提取地底的黑色黄金。',
         resource: 'oil',
         resourcePerSecond: {
             'oil': 1
@@ -648,8 +648,8 @@ Game.buildingData = (function () {
     });
 
     instance.lunariteT2 = $.extend({}, baseProducerBuilding, {
-        name: 'Low-Gravity Drill',
-        desc: 'These drills practically float!',
+        name: '低重力钻岩机',
+        desc: '悬在半空也能钻！',
         resource: 'lunarite',
         resourcePerSecond: {
             'energy': -20,

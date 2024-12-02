@@ -300,7 +300,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_24',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'plasmaIcon',
-		title: 'Build %s Super-Heaters',
+		title: '制造 %s 台超高温加热器',
 		evaluator: function(x) { return heater >= x },
 		progressEvaluator: function(x) { return heater/x }
 	};
@@ -417,7 +417,7 @@ Game.achievementsData = (function(){
 		id_v4: 'ach_30',
 		categoryInstance: Game.achievementsCategoryData.producers,
 		iconName: 'oilIcon',
-		title: 'Build %s Small Pumps',
+		title: '制造 %s 台小型油泵',
 		evaluator: function(x) { return pump >= x },
 		progressEvaluator: function(x) { return pump/x }
 	};

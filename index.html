@@ -85,7 +85,7 @@
 				</a>
 				<a class="navbar-brand">
 					<span id="energyLow" class="text-muted small ng-binding red hidden">
-						Energy Deficit!
+						能量短缺！
 					</span>
 				</a>
 				<a class="navbar-brand pointer" target="_blank" href="http://discord.gg/hgRUjVp">
@@ -156,7 +156,7 @@
 						</td>
 						<td id="energyNav1" style="border:none; vertical-align:middle;">
 							<span>
-								Energy
+								能量
 							</span>
 						</td>
 						<td id="energyNav2" style="border: none; vertical-align:middle; text-align:center;">
@@ -180,7 +180,7 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Uranium
+								铀
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
@@ -202,7 +202,7 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								Lava
+								熔岩
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
@@ -547,7 +547,7 @@
 						</td>
 						<td style="vertical-align:middle;">
 							<span>
-								陨石
+								陨铁
 							</span>
 						</td>
 						<td style="vertical-align:middle; text-align:center;">
@@ -572,14 +572,14 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Plasma
+										等离子体
 									</h2>
 									<span>
-										Plasma is the 4th state of matter and is used by Tier 4 machines and large space structures as an extreme power source for your company. At first you can hold 100,000 plasma at once, but you can unlock and purchase Plasma Storage Units to increase this number.
+										等离子体是物质的第四种形态，也是应用于公司中各类四级机器和大型太空结构的极限能量来源。初始的最大等离子体储量为 100,000，但后续可通过解锁等离子体存储单元来扩展。
 										<br>
-										Time remaining until <span id="plasmaLimitType">full</span> storage: <b><span id="plasmaLimitTime">N/A</span></b>
+										<span id="plasmaLimitType">满载</span>所需时间：<b><span id="plasmaLimitTime">N/A</span></b>
 										<br>
-										1 Plasma is created by infusing <span id="manualPlasmaHydrogenCost">10</span> Hydrogen with <span id="manualPlasmaEnergyCost">1000</span> Energy.
+										向 <span id="manualPlasmaHydrogenCost">10</span> 单位氢注入 <span id="manualPlasmaEnergyCost">1000</span> 单位能量可制得 1 单位等离子体。
 									</span>
 									<br>
 									<br>
@@ -598,7 +598,7 @@
 									<span>
 										PSUs increase your plasma storage by 50,000 per PSU built.
 										<br>
-										Costs <span id="PSUSilverCost">770,000</span> Silver, <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
+										造价：<span id="PSUSilverCost">770,000</span> Silver, <span id="PSUGoldCost">770,000</span> Gold, <span id="PSUUraniumCost">550,000</span> Uranium.
 									</span>
 									<br>
 									<br>
@@ -613,7 +613,7 @@
 									<span>
 										Tier 2 PSUs increase your plasma storage by 500,000 per PSU built.
 										<br>
-										Costs <span id="PSUT2SilverCost">9.300M</span> Silver, <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
+										造价：<span id="PSUT2SilverCost">9.300M</span> Silver, <span id="PSUT2GoldCost">9.300M</span> Gold, <span id="PSUT2UraniumCost">6.800M</span> Uranium.
 									</span>
 									<br>
 									<br>
@@ -623,22 +623,22 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Super-Heater: <span id="heater">0</span>
+										超高温加热器：<span id="heater">0</span>
 									</h3>
 									<span>
-										The Super-Heater throws electricity at Hydrogen to turn it into a plasmatic substance.
+										超高温加热器将能量抛射向氢，使其转化为等离子物质。
 										<br>
-										Uses 1,000 Energy and 10 Hydrogen per second.
+										每秒消耗 1,000 单位能量和 10 单位氢。
 										<br>
-										Produces 1 Plasma per second.
+										每秒产出 1 单位等离子体。
 										<br>
-										Costs <span id="heaterLunariteCost">75,000</span> Lunarite, <span id="heaterGemCost">68,000</span> Gems, <span id="heaterSiliconCost">59,000</span> Silicon.
+										造价：<span id="heaterLunariteCost">75,000</span> 块月岩、<span id="heaterGemCost">68,000</span> 块宝石、<span id="heaterSiliconCost">59,000</span> 块硅。
 									</span>
 									<br>
 									<br>
-									<button onclick="getHeater()" class="btn btn-default">Get Super-Heater</button>
-									<button onclick="toggleHeater()" class="btn btn-default">Turn Super-Heater <span id="heaterToggled">Off</span></button>
-									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">Destroy Super-Heater</button>
+									<button onclick="getHeater()" class="btn btn-default">制造超高温加热器</button>
+									<button onclick="toggleHeater()" class="btn btn-default"><span id="heaterToggled">关闭</span>超高温加热器</button>
+									<button onclick="destroyMachine('heater')" class="btn btn-default destroy hidden">拆毁超高温加热器</button>
 								</td>
 							</tr>
 							<tr id="plasmaTier2" class="hidden">
@@ -653,7 +653,7 @@
 										<br>
 										Produces 10 Plasma per second.
 										<br>
-										Costs <span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> Meteorite.
+										造价：<span id="plasmaticLunariteCost">810,000</span> Lunarite, <span id="plasmaticSiliconCost">720,000</span> Silicon, <span id="plasmaticMeteoriteCost">970</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -674,7 +674,7 @@
 										<br>
 										Produces 140 Plasma per second.
 										<br>
-										Costs <span id="bathLavaCost">6.20M</span> Lava, <span id="bathGoldCost">5.90M</span> Gold, <span id="bathMeteoriteCost">12,100</span> Meteorite.
+										造价：<span id="bathLavaCost">6.20M</span> 单位熔岩、<span id="bathGoldCost">5.90M</span> 块金、<span id="bathMeteoriteCost">12,100</span> 块陨铁。
 									</span>
 									<br>
 									<br>
@@ -697,7 +697,7 @@
 									<span>
 										能量可通过蒸汽引擎、太阳能乃至聚变等核能途径产出。初始的最大储能值为 100,000，但后续可通过解锁电池来扩展。
 										<br>
-										储能<span id="energyLimitType">满载</span>所需时间：<b><span id="energyLimitTime">N/A</span></b>
+										<span id="energyLimitType">满载</span>所需时间：<b><span id="energyLimitTime">N/A</span></b>
 										<br>
 									</span>
 									<br>
@@ -712,7 +712,7 @@
 									<span>
 										每块电池可将最大储能值提升 50,000。
 										<br>
-										造价 <span id="batteryMetalCost">50,000</span> 块金属、<span id="batteryGemCost">50,000</span> 块宝石、<span id="batteryLunariteCost">30,000</span> 块月岩。
+										造价：<span id="batteryMetalCost">50,000</span> 块金属、<span id="batteryGemCost">50,000</span> 块宝石、<span id="batteryLunariteCost">30,000</span> 块月岩。
 									</span>
 									<br>
 									<br>
@@ -727,7 +727,7 @@
 									<span>
 										每块二级电池可将最大储能值提升 500,000。
 										<br>
-										造价 <span id="batteryT2MetalCost">550,000</span> 块金属、<span id="batteryT2GemCost">550,000</span> 块宝石、<span id="batteryT2LunariteCost">330,000</span> 块月岩。
+										造价：<span id="batteryT2MetalCost">550,000</span> 块金属、<span id="batteryT2GemCost">550,000</span> 块宝石、<span id="batteryT2LunariteCost">330,000</span> 块月岩。
 									</span>
 									<br>
 									<br>
@@ -742,7 +742,7 @@
 									<span>
 										每块二级电池可将最大储能值提升 5,000,000。
 										<br>
-										造价 <span id="batteryT3MetalCost">5,500,000</span> 块金属、<span id="batteryT3GemCost">5,500,000</span> 块宝石、<span id="batteryT3LunariteCost">3,300,000</span> 块月岩。
+										造价：<span id="batteryT3MetalCost">5,500,000</span> 块金属、<span id="batteryT3GemCost">5,500,000</span> 块宝石、<span id="batteryT3LunariteCost">3,300,000</span> 块月岩。
 									</span>
 									<br>
 									<br>
@@ -757,7 +757,7 @@
 									<span>
 										Tier 4 Batteries increase your energy storage by 50,000,000 per battery built.
 										<br>
-										Costs <span id="batteryT4MetalCost">55,000,000</span> Metal, <span id="batteryT4GemCost">55,000,000</span> Gems, <span id="batteryT4LunariteCost">33,000,000</span> Lunarite.
+										造价：<span id="batteryT4MetalCost">55,000,000</span> Metal, <span id="batteryT4GemCost">55,000,000</span> Gems, <span id="batteryT4LunariteCost">33,000,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -772,7 +772,7 @@
 									<span>
 										Tier 5 Batteries increase your energy storage by 500,000,000 per battery built.
 										<br>
-										Costs <span id="batteryT5MetalCost">490,000,000</span> Metal, <span id="batteryT5GemCost">490,000,000</span> Gems, <span id="batteryT5LunariteCost">290,000,000</span> Lunarite.
+										造价：<span id="batteryT5MetalCost">490,000,000</span> Metal, <span id="batteryT5GemCost">490,000,000</span> Gems, <span id="batteryT5LunariteCost">290,000,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -789,7 +789,7 @@
 										<br>
 										每台引擎每秒消耗 1 块木炭，产生 <span id="charcoalEngineOutput">2</span> 单位能量。
 										<br>
-										造价 <span id="charcoalEngineMetalCost">50</span> 块金属、<span id="charcoalEngineGemCost">25</span> 块宝石。
+										造价：<span id="charcoalEngineMetalCost">50</span> 块金属、<span id="charcoalEngineGemCost">25</span> 块宝石。
 									</span>
 									<br>
 									<br>
@@ -807,7 +807,7 @@
 										<br>
 										每块太阳能板每秒产生 <span id="solarPanelOutput">1.5</span> 单位能量。
 										<br>
-										造价 <span id="solarPanelMetalCost">30</span> 块金属、<span id="solarPanelGemCost">35</span> 块宝石。
+										造价：<span id="solarPanelMetalCost">30</span> 块金属、<span id="solarPanelGemCost">35</span> 块宝石。
 									</span>
 									<br>
 									<br>
@@ -825,7 +825,7 @@
 										<br>
 										每座发电站每秒消耗 6 单位甲烷，产生 23 单位能量。
 										<br>
-										造价 <span id="methaneStationLunariteCost">110</span> 块月岩、<span id="methaneStationTitaniumCost">90</span> 块钛。
+										造价：<span id="methaneStationLunariteCost">110</span> 块月岩、<span id="methaneStationTitaniumCost">90</span> 块钛。
 									</span>
 									<br>
 									<br>
@@ -843,7 +843,7 @@
 										<br>
 										Each Power Station produces 153 Energy and uses 7 uranium per second.
 										<br>
-										Costs <span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
+										造价：<span id="nuclearStationLunariteCost">20,000</span> Lunarite, <span id="nuclearStationTitaniumCost">10,000</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -861,7 +861,7 @@
 										<br>
 										Each Power Station produces 191 Energy and uses 11 lava per second.
 										<br>
-										Costs <span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> Gems, <span id="magmaticSilverCost">20,000</span> Silver.
+										造价：<span id="magmaticLunariteCost">25,000</span> Lunarite, <span id="magmaticGemCost">30,000</span> Gems, <span id="magmaticSilverCost">20,000</span> Silver.
 									</span>
 									<br>
 									<br>
@@ -877,9 +877,9 @@
 									<span>
 										两个轻原子核聚合为一个更重的原子，是为聚变反应。这种反应每时每刻都发生在千万星辰之中，喷涌出巨大的能量。
 										<br>
-										每座反应堆每秒消耗 10 单位氢和 273 单位氦，产生 273 单位能量。
+										每座反应堆每秒消耗 10 单位氢和 10 单位氦，产生 273 单位能量。
 										<br>
-										造价 <span id="fusionReactorLunariteCost">30,000</span> 块月岩、<span id="fusionReactorTitaniumCost">20,000</span> 块钛、<span id="fusionReactorSiliconCost">15,000</span> 块硅。
+										造价：<span id="fusionReactorLunariteCost">30,000</span> 块月岩、<span id="fusionReactorTitaniumCost">20,000</span> 块钛、<span id="fusionReactorSiliconCost">15,000</span> 块硅。
 									</span>
 									<br>
 									<br>
@@ -918,9 +918,9 @@
 									<span>
 										Upgrade your Uranium storage size to <span id="uraniumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="uraniumLimitType">full</span> storage: <b><span id="uraniumLimitTime">N/A</span></b>
+										<span id="uraniumLimitType">满载</span>所需时间：<b><span id="uraniumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="uraniumStorageCost">50</span> Uranium, <span id="uraniumStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -937,7 +937,7 @@
 										<br>
 										Produces 1 Uranium per second.
 										<br>
-										Costs <span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
+										造价：<span id="grinderTitaniumCost">2000</span> Titanium, <span id="grinderLunariteCost">4000</span> Lunarite, <span id="grinderGoldCost">2000</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -957,7 +957,7 @@
 										<br>
 										Uses 40 Energy per second.
 										<br>
-										Costs <span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
+										造价：<span id="cubicUraniumCost">80</span> Uranium, <span id="cubicLunariteCost">10000</span> Lunarite, <span id="cubicOilCost">10000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -977,7 +977,7 @@
 										<br>
 										Uses 180 Energy per second.
 										<br>
-										Costs <span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
+										造价：<span id="enricherLunariteCost">21,700</span> Lunarite, <span id="enricherTitaniumCost">23,000</span> Titanium, <span id="enricherSiliconCost">13,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -997,7 +997,7 @@
 										<br>
 										Uses 463 Energy per second.
 										<br>
-										Costs <span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> Meteorite.
+										造价：<span id="recyclerLunariteCost">93,100</span> Lunarite, <span id="recyclerMethaneCost">47,000</span> Methane, <span id="recyclerMeteoriteCost">830</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1017,7 +1017,7 @@
 										<br>
 										Uses 2719 Energy per second.
 										<br>
-										Costs <span id='planetNukeTitaniumCost'>486000</span> Titanium, <span id='planetNukeSiliconCost'>266000</span> Silicon, <span id='planetNukeIceCost'>364000</span> Ice
+										造价：<span id='planetNukeTitaniumCost'>486000</span> Titanium, <span id='planetNukeSiliconCost'>266000</span> Silicon, <span id='planetNukeIceCost'>364000</span> Ice
 									</span>
 									<br>
 									<br>
@@ -1054,9 +1054,9 @@
 									<span>
 										将石油的最大存储量拓展至 <span id="oilNextStorage">100</span>。
 										<br>
-										Time remaining until <span id="oilLimitType">full</span> storage: <b><span id="oilLimitTime">N/A</span></b>
+										<span id="oilLimitType">满载</span>所需时间：<b><span id="oilLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="oilStorageCost">50</span> Oil, <span id="oilStorageMetalCost">20</span> Metal.
+										造价：<span id="oilStorageCost">50</span> Oil, <span id="oilStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1066,19 +1066,19 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Small Pump: <span id="pump">0</span>
+										小型油泵：<span id="pump">0</span>
 									</h3>
 									<span>
-										Build a small pump to extract Oil from the ground
+										制造一台小型油泵，提取地底的黑色黄金。
 										<br>
-										Produces 1 Oil per second.
+										每秒泵取 1 单位石油。
 										<br>
-										Costs <span id="pumpMetalCost">60</span> Metal, <span id="pumpGemCost">20</span> Gems.
+										造价：<span id="pumpMetalCost">60</span> 块金属、<span id="pumpGemCost">20</span> 块宝石。
 									</span>
 									<br>
 									<br>
-									<button onclick="getPump()" class="btn btn-default">Get Pump</button>
-									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">Destroy Small Pump</button>
+									<button onclick="getPump()" class="btn btn-default">制造小型油泵</button>
+									<button onclick="destroyMachine('pump')" class="btn btn-default destroy hidden">拆毁小型油泵</button>
 								</td>
 							</tr>
 							<tr id="oilTier2" class="hidden">
@@ -1091,7 +1091,7 @@
 										<br>
 										Each one produces <span id="pumpjackOutput">5</span> Oil for 4 Energy every second.
 										<br>
-										Costs <span id="pumpjackMetalCost">250</span> Metal, <span id="pumpjackGemCost">80</span> Gems, <span id="pumpjackOilCost">50</span> Oil.
+										造价：<span id="pumpjackMetalCost">250</span> Metal, <span id="pumpjackGemCost">80</span> Gems, <span id="pumpjackOilCost">50</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1111,7 +1111,7 @@
 										<br>
 										Uses 12 Energy per second.
 										<br>
-										Costs <span id="oilFieldLunariteCost">2,400</span> Lunarite, <span id="oilFieldTitaniumCost">2,700</span> Titanium, <span id="oilFieldSiliconCost">3,900</span> Silicon.
+										造价：<span id="oilFieldLunariteCost">2,400</span> Lunarite, <span id="oilFieldTitaniumCost">2,700</span> Titanium, <span id="oilFieldSiliconCost">3,900</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1131,7 +1131,7 @@
 										<br>
 										Uses 44 Energy per second.
 										<br>
-										Costs <span id="oilRigLunariteCost">19,400</span> Lunarite, <span id="oilRigTitaniumCost">16,800</span> Titanium, <span id="oilRigMeteoriteCost">760</span> Meteorite.
+										造价：<span id="oilRigLunariteCost">19,400</span> Lunarite, <span id="oilRigTitaniumCost">16,800</span> Titanium, <span id="oilRigMeteoriteCost">760</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1151,7 +1151,7 @@
 										<br>
 										Uses 258 Energy per second.
 										<br>
-										Costs <span id='fossilatorUraniumCost'>110000</span> Uranium, <span id='fossilatorCharcoalCost'>96000</span> Charcoal, <span id='fossilatorLavaCost'>167000</span> Lava.
+										造价：<span id='fossilatorUraniumCost'>110000</span> Uranium, <span id='fossilatorCharcoalCost'>96000</span> Charcoal, <span id='fossilatorLavaCost'>167000</span> Lava.
 									</span>
 									<br>
 									<br>
@@ -1190,9 +1190,9 @@
 									<span>
 										Upgrade your Metal storage size to <span id="metalNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="metalLimitType">full</span> storage: <b><span id="metalLimitTime">N/A</span></b>
+										<span id="metalLimitType">满载</span>所需时间：<b><span id="metalLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="metalStorageCost">50</span> Metal.
+										造价：<span id="metalStorageCost">50</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1209,7 +1209,7 @@
 										<br>
 										Produces 1 Metal per second.
 										<br>
-										Costs <span id="minerMetalCost">10</span> Metal, <span id="minerWoodCost">5</span> Wood.
+										造价：<span id="minerMetalCost">10</span> Metal, <span id="minerWoodCost">5</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -1229,7 +1229,7 @@
 										<br>
 										They use 2 Energy per second.
 										<br>
-										Costs <span id="heavyDrillMetalCost">160</span> Metal, <span id="heavyDrillGemCost">60</span> Gems, <span id="heavyDrillOilCost">50</span> Oil.
+										造价：<span id="heavyDrillMetalCost">160</span> Metal, <span id="heavyDrillGemCost">60</span> Gems, <span id="heavyDrillOilCost">50</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1249,7 +1249,7 @@
 										<br>
 										They use 9 Energy per second.
 										<br>
-										Costs <span id="gigaDrillLunariteCost">2,800</span> Lunarite, <span id="gigaDrillGemCost">3,400</span> Gems, <span id="gigaDrillSiliconCost">4,100</span> Silicon.
+										造价：<span id="gigaDrillLunariteCost">2,800</span> Lunarite, <span id="gigaDrillGemCost">3,400</span> Gems, <span id="gigaDrillSiliconCost">4,100</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1269,7 +1269,7 @@
 										<br>
 										They use 24 Energy per second.
 										<br>
-										Costs <span id="quantumDrillLunariteCost">29,000</span> Lunarite, <span id="quantumDrillGoldCost">18,700</span> Gold, <span id="quantumDrillMeteoriteCost">900</span> Meteorite.
+										造价：<span id="quantumDrillLunariteCost">29,000</span> Lunarite, <span id="quantumDrillGoldCost">18,700</span> Gold, <span id="quantumDrillMeteoriteCost">900</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1289,7 +1289,7 @@
 										<br>
 										They use 131 Energy per second.
 										<br>
-										Costs <span id='multiDrillTitaniumCost'>184000</span> Titanium, <span id='multiDrillGoldCost'>133000</span> Gold, <span id='multiDrillOilCost'>170000</span> Oil.
+										造价：<span id='multiDrillTitaniumCost'>184000</span> Titanium, <span id='multiDrillGoldCost'>133000</span> Gold, <span id='multiDrillOilCost'>170000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1328,9 +1328,9 @@
 									<span>
 										Upgrade your gem storage size to <span id="gemNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="gemLimitType">full</span> storage: <b><span id="gemLimitTime">N/A</span></b>
+										<span id="gemLimitType">满载</span>所需时间：<b><span id="gemLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="gemStorageCost">50</span> Gems, <span id="gemStorageMetalCost">20</span> Metal.
+										造价：<span id="gemStorageCost">50</span> Gems, <span id="gemStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1347,7 +1347,7 @@
 										<br>
 										Produces 1 gem per second.
 										<br>
-										Costs <span id="gemMinerMetalCost">15</span> Metal, <span id="gemMinerGemCost">10</span> Gems.
+										造价：<span id="gemMinerMetalCost">15</span> Metal, <span id="gemMinerGemCost">10</span> Gems.
 									</span>
 									<br>
 									<br>
@@ -1367,7 +1367,7 @@
 										<br>
 										Uses 2 Energy per second.
 										<br>
-										Costs <span id="advancedDrillMetalCost">120</span> Metal, <span id="advancedDrillGemCost">200</span> Gems, <span id="advancedDrillOilCost">60</span> Oil.
+										造价：<span id="advancedDrillMetalCost">120</span> Metal, <span id="advancedDrillGemCost">200</span> Gems, <span id="advancedDrillOilCost">60</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1387,7 +1387,7 @@
 										<br>
 										Uses 15 Energy per second.
 										<br>
-										Costs <span id="diamondDrillLunariteCost">3,400</span> Lunarite, <span id="diamondDrillGemCost">8,000</span> Gems, <span id="diamondDrillSiliconCost">4,500</span> Silicon.
+										造价：<span id="diamondDrillLunariteCost">3,400</span> Lunarite, <span id="diamondDrillGemCost">8,000</span> Gems, <span id="diamondDrillSiliconCost">4,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1407,7 +1407,7 @@
 										<br>
 										Uses 40 Energy per second.
 										<br>
-										Costs <span id="carbyneDrillLunariteCost">21,000</span> Lunarite, <span id="carbyneDrillGemCost">27,000</span> Gems, <span id="carbyneDrillMeteoriteCost">800</span> Meteorite.
+										造价：<span id="carbyneDrillLunariteCost">21,000</span> Lunarite, <span id="carbyneDrillGemCost">27,000</span> Gems, <span id="carbyneDrillMeteoriteCost">800</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1427,7 +1427,7 @@
 										<br>
 										Uses 260 Energy per second.
 										<br>
-										Costs <span id='diamondChamberUraniumCost'>181,000</span> Uranium, <span id='diamondChamberCharcoalCost'>185,000</span> Charcoal, <span id='diamondChamberMeteoriteCost'>12,500</span> Meteorite.
+										造价：<span id='diamondChamberUraniumCost'>181,000</span> Uranium, <span id='diamondChamberCharcoalCost'>185,000</span> Charcoal, <span id='diamondChamberMeteoriteCost'>12,500</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1467,9 +1467,9 @@
 									<span>
 										Upgrade your Charcoal storage size to <span id="charcoalNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="charcoalLimitType">full</span> storage: <b><span id="charcoalLimitTime">N/A</span></b>
+										<span id="charcoalLimitType">满载</span>所需时间：<b><span id="charcoalLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="charcoalStorageCost">50</span> Charcoal, <span id="charcoalStorageMetalCost">20</span> Metal.
+										造价：<span id="charcoalStorageCost">50</span> Charcoal, <span id="charcoalStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1488,7 +1488,7 @@
 										<br>
 										每秒消耗 2 块木头。
 										<br>
-										造价 <span id="woodburnerMetalCost">10</span> 块金属、<span id="woodburnerWoodCost">5</span> 块木头。
+										造价：<span id="woodburnerMetalCost">10</span> 块金属、<span id="woodburnerWoodCost">5</span> 块木头。
 									</span>
 									<br>
 									<br>
@@ -1510,7 +1510,7 @@
 										<br>
 										Uses 3 Energy per second.
 										<br>
-										Costs <span id="furnaceMetalCost">80</span> Metal, <span id="furnaceWoodCost">40</span> Wood, <span id="furnaceOilCost">100</span> Oil.
+										造价：<span id="furnaceMetalCost">80</span> Metal, <span id="furnaceWoodCost">40</span> Wood, <span id="furnaceOilCost">100</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1532,7 +1532,7 @@
 										<br>
 										Uses 13 Energy per second.
 										<br>
-										Costs <span id="kilnLunariteCost">3,500</span> Lunarite, <span id="kilnGemCost">6,200</span> Gems, <span id="kilnSiliconCost">3,800</span> Silicon.
+										造价：<span id="kilnLunariteCost">3,500</span> Lunarite, <span id="kilnGemCost">6,200</span> Gems, <span id="kilnSiliconCost">3,800</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1554,7 +1554,7 @@
 										<br>
 										Uses 34 Energy per second.
 										<br>
-										Costs <span id="fryerLunariteCost">15,800</span> Lunarite, <span id="fryerLavaCost">12,500</span> Lava, <span id="fryerMeteoriteCost">560</span> Meteorite.
+										造价：<span id="fryerLunariteCost">15,800</span> Lunarite, <span id="fryerLavaCost">12,500</span> Lava, <span id="fryerMeteoriteCost">560</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1576,7 +1576,7 @@
 										<br>
 										Uses 187 Energy per second.
 										<br>
-										Costs <span id='microPollutorMetalCost'>133000</span> Metal, <span id='microPollutorWoodCost'>189000</span> Wood, <span id='microPollutorLavaCost'>160000</span> Lava.
+										造价：<span id='microPollutorMetalCost'>133000</span> Metal, <span id='microPollutorWoodCost'>189000</span> Wood, <span id='microPollutorLavaCost'>160000</span> Lava.
 									</span>
 									<br>
 									<br>
@@ -1615,9 +1615,9 @@
 									<span>
 										Upgrade your wood storage size to <span id="woodNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="woodLimitType">full</span> storage: <b><span id="woodLimitTime">N/A</span></b>
+										<span id="woodLimitType">满载</span>所需时间：<b><span id="woodLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="woodStorageCost">50</span> wood, <span id="woodStorageMetalCost">20</span> Metal.
+										造价：<span id="woodStorageCost">50</span> wood, <span id="woodStorageMetalCost">20</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1634,7 +1634,7 @@
 										<br>
 										Produces 1 wood per second.
 										<br>
-										Costs <span id="woodcutterMetalCost">10</span> Metal, <span id="woodcutterWoodCost">5</span> Wood.
+										造价：<span id="woodcutterMetalCost">10</span> Metal, <span id="woodcutterWoodCost">5</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -1654,7 +1654,7 @@
 										<br>
 										Uses 4 Energy per second.
 										<br>
-										Costs <span id="laserCutterMetalCost">50</span> Metal, <span id="laserCutterGemCost">90</span> Gems, <span id="laserCutterOilCost">40</span> Oil.
+										造价：<span id="laserCutterMetalCost">50</span> Metal, <span id="laserCutterGemCost">90</span> Gems, <span id="laserCutterOilCost">40</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1674,7 +1674,7 @@
 										<br>
 										Uses 16 Energy per second.
 										<br>
-										Costs <span id="deforesterLunariteCost">3,000</span> Lunarite, <span id="deforesterTitaniumCost">2,700</span> Titanium, <span id="deforesterSiliconCost">2,500</span> Silicon.
+										造价：<span id="deforesterLunariteCost">3,000</span> Lunarite, <span id="deforesterTitaniumCost">2,700</span> Titanium, <span id="deforesterSiliconCost">2,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1694,7 +1694,7 @@
 										<br>
 										Uses 43 Energy per second.
 										<br>
-										Costs <span id="infuserLunariteCost">16,000</span> Lunarite, <span id="infuserOilCost">31,200</span> Oil, <span id="infuserMeteoriteCost">490</span> Meteorite.
+										造价：<span id="infuserLunariteCost">16,000</span> Lunarite, <span id="infuserOilCost">31,200</span> Oil, <span id="infuserMeteoriteCost">490</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1714,7 +1714,7 @@
 										<br>
 										Uses 244 Energy per second.
 										<br>
-										Costs <span id='forestMetalCost'>122000</span> Metal, <span id='forestGemCost'>151000</span> Gems, <span id='forestHydrogenCost'>183000</span> Hydrogen.
+										造价：<span id='forestMetalCost'>122000</span> Metal, <span id='forestGemCost'>151000</span> Gems, <span id='forestHydrogenCost'>183000</span> Hydrogen.
 									</span>
 									<br>
 									<br>
@@ -1753,9 +1753,9 @@
 									<span>
 										Upgrade your Silicon storage size to <span id="siliconNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="siliconLimitType">full</span> storage: <b><span id="siliconLimitTime">N/A</span></b>
+										<span id="siliconLimitType">满载</span>所需时间：<b><span id="siliconLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="siliconStorageCost">50</span> Silicon, <span id="siliconStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="siliconStorageCost">50</span> Silicon, <span id="siliconStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -1772,7 +1772,7 @@
 										<br>
 										Produces 1 silicon per second.
 										<br>
-										Costs <span id="blowtorchLunariteCost">150</span> Lunarite, <span id="blowtorchTitaniumCost">30</span> Titanium.
+										造价：<span id="blowtorchLunariteCost">150</span> Lunarite, <span id="blowtorchTitaniumCost">30</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -1792,7 +1792,7 @@
 										<br>
 										Uses 18 Energy per second.
 										<br>
-										Costs <span id="scorcherLunariteCost">500</span> Lunarite, <span id="scorcherGemCost">1,200</span> Gems, <span id="scorcherOilCost">1,600</span> Oil.
+										造价：<span id="scorcherLunariteCost">500</span> Lunarite, <span id="scorcherGemCost">1,200</span> Gems, <span id="scorcherOilCost">1,600</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -1812,7 +1812,7 @@
 										<br>
 										Uses 53 Energy per second.
 										<br>
-										Costs <span id="annihilatorLunariteCost">3,000</span> Lunarite, <span id="annihilatorGemCost">8,300</span> Gems, <span id="annihilatorSilverCost">2,400</span> Silver.
+										造价：<span id="annihilatorLunariteCost">3,000</span> Lunarite, <span id="annihilatorGemCost">8,300</span> Gems, <span id="annihilatorSilverCost">2,400</span> Silver.
 									</span>
 									<br>
 									<br>
@@ -1832,7 +1832,7 @@
 										<br>
 										Uses 138 Energy per second.
 										<br>
-										Costs <span id="desertLunariteCost">20,000</span> Lunarite, <span id="desertSiliconCost">17,700</span> Silicon, <span id="desertMeteoriteCost">400</span> Meteorite.
+										造价：<span id="desertLunariteCost">20,000</span> Lunarite, <span id="desertSiliconCost">17,700</span> Silicon, <span id="desertMeteoriteCost">400</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1852,7 +1852,7 @@
 										<br>
 										Uses 746 Energy per second.
 										<br>
-										Costs <span id='tardisTitaniumCost'>204000</span> Titanium, <span id='tardisSiliconCost'>205000</span> Silicon, <span id='tardisMeteoriteCost'>17800</span> Meterorite.
+										造价：<span id='tardisTitaniumCost'>204000</span> Titanium, <span id='tardisSiliconCost'>205000</span> Silicon, <span id='tardisMeteoriteCost'>17800</span> Meterorite.
 									</span>
 									<br>
 									<br>
@@ -1891,9 +1891,9 @@
 									<span>
 										Upgrade your Lunarite storage size to <span id="lunariteNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="lunariteLimitType">full</span> storage: <b><span id="lunariteLimitTime">N/A</span></b>
+										<span id="lunariteLimitType">满载</span>所需时间：<b><span id="lunariteLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="lunariteStorageCost">50</span> Lunarite, <span id="lunariteStorageMetalCost">200</span> Metal.
+										造价：<span id="lunariteStorageCost">50</span> Lunarite, <span id="lunariteStorageMetalCost">200</span> Metal.
 									</span>
 									<br>
 									<br>
@@ -1910,7 +1910,7 @@
 										<br>
 										Produces 1 Lunarite per second.
 										<br>
-										Costs <span id="moonWorkerGemCost">500</span> Gems.
+										造价：<span id="moonWorkerGemCost">500</span> Gems.
 									</span>
 									<br>
 									<br>
@@ -1921,21 +1921,21 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Low-Gravity Drill: <span id="moonDrill">0</span>
+										低重力钻岩机：<span id="moonDrill">0</span>
 									</h3>
 									<span>
-										These drills practically float!
+										悬在半空也能钻！
 										<br>
-										Produces 10 Lunarite per second.
+										每秒钻取 10 块月岩。
 										<br>
-										Uses 20 Energy per second.
+										每秒消耗 20 单位能量。
 										<br>
-										Costs <span id="moonDrillMetalCost">1,000</span> Metal, <span id="moonDrillGemCost">600</span> Gems, <span id="moonDrillOilCost">400</span> Oil.
+										造价：<span id="moonDrillMetalCost">1,000</span> 块金属、<span id="moonDrillGemCost">600</span> 块宝石、<span id="moonDrillOilCost">400</span> 单位石油。
 									</span>
 									<br>
 									<br>
-									<button onclick="getMoonDrill()" class="btn btn-default">Get Low-Gravity Drill</button>
-									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">Destroy Low-Gravity Drill</button>
+									<button onclick="getMoonDrill()" class="btn btn-default">制造低重力钻岩机</button>
+									<button onclick="destroyMachine('moonDrill')" class="btn btn-default destroy hidden">拆毁低重力钻岩机</button>
 								</td>
 							</tr>
 							<tr id="lunariteTier3" class="hidden">
@@ -1950,7 +1950,7 @@
 										<br>
 										Uses 70 Energy per second.
 										<br>
-										Costs <span id="moonQuarryLunariteCost">8,000</span> Lunarite, <span id="moonQuarryGemCost">5,000</span> Gems, <span id="moonQuarrySiliconCost">3,500</span> Silicon.
+										造价：<span id="moonQuarryLunariteCost">8,000</span> Lunarite, <span id="moonQuarryGemCost">5,000</span> Gems, <span id="moonQuarrySiliconCost">3,500</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -1970,7 +1970,7 @@
 										<br>
 										Uses 182 Energy per second.
 										<br>
-										Costs <span id="planetExcavatorTitaniumCost">45,000</span> Titanium, <span id="planetExcavatorIceCost">37,000</span> Ice, <span id="planetExcavatorMeteoriteCost">500</span> Meteorite.
+										造价：<span id="planetExcavatorTitaniumCost">45,000</span> Titanium, <span id="planetExcavatorIceCost">37,000</span> Ice, <span id="planetExcavatorMeteoriteCost">500</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -1990,7 +1990,7 @@
 										<br>
 										Uses 1216 Energy per second.
 										<br>
-										Costs <span id='clonerTitaniumCost'>204000</span> Titanium, <span id='clonerGoldCost'>150000</span> Gold, <span id='clonerMethaneCost'>195000</span> Methane.
+										造价：<span id='clonerTitaniumCost'>204000</span> Titanium, <span id='clonerGoldCost'>150000</span> Gold, <span id='clonerMethaneCost'>195000</span> Methane.
 									</span>
 									<br>
 									<br>
@@ -2029,9 +2029,9 @@
 									<span>
 										Upgrade your methane storage size to <span id="methaneNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="methaneLimitType">full</span> storage: <b><span id="methaneLimitTime">N/A</span></b>
+										<span id="methaneLimitType">满载</span>所需时间：<b><span id="methaneLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="methaneStorageCost">50</span> Methane, <span id="methaneStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="methaneStorageCost">50</span> Methane, <span id="methaneStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2048,7 +2048,7 @@
 										<br>
 										Produces 1 methane per second.
 										<br>
-										Costs <span id="vacuumLunariteCost">50</span> Lunarite, <span id="vacuumGemCost">500</span> Gems.
+										造价：<span id="vacuumLunariteCost">50</span> Lunarite, <span id="vacuumGemCost">500</span> Gems.
 									</span>
 									<br>
 									<br>
@@ -2068,7 +2068,7 @@
 										<br>
 										Uses 16 Energy per second.
 										<br>
-										Costs <span id="suctionExcavatorLunariteCost">10,000</span> Lunarite, <span id="suctionExcavatorGemCost">800</span> Gems, <span id="suctionExcavatorOilCost">600</span> Oil.
+										造价：<span id="suctionExcavatorLunariteCost">10,000</span> Lunarite, <span id="suctionExcavatorGemCost">800</span> Gems, <span id="suctionExcavatorOilCost">600</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2088,7 +2088,7 @@
 										<br>
 										Uses 49 Energy per second.
 										<br>
-										Costs <span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
+										造价：<span id="spaceCowLunariteCost">10,000</span> Lunarite, <span id="spaceCowTitaniumCost">9,000</span> Titanium, <span id="spaceCowSiliconCost">4,100</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2108,7 +2108,7 @@
 										<br>
 										Uses 132 Energy per second.
 										<br>
-										Costs <span id="ventLunariteCost">52,000</span> Lunarite, <span id="ventHeliumCost">47,000</span> Helium, <span id="ventMeteoriteCost">390</span> Meteorite.
+										造价：<span id="ventLunariteCost">52,000</span> Lunarite, <span id="ventHeliumCost">47,000</span> Helium, <span id="ventMeteoriteCost">390</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2128,7 +2128,7 @@
 										<br>
 										Uses 899 Energy per second.
 										<br>
-										Costs <span id='interCowLunariteCost'>140000</span> Lunarite, <span id='interCowGoldCost'>202000</span> Gold, <span id='interCowHydrogenCost'>158000</span> Hydrogen.
+										造价：<span id='interCowLunariteCost'>140000</span> Lunarite, <span id='interCowGoldCost'>202000</span> Gold, <span id='interCowHydrogenCost'>158000</span> Hydrogen.
 									</span>
 									<br>
 									<br>
@@ -2167,9 +2167,9 @@
 									<span>
 										Upgrade your Titanium storage size to <span id="titaniumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="titaniumLimitType">full</span> storage: <b><span id="titaniumLimitTime">N/A</span></b>
+										<span id="titaniumLimitType">满载</span>所需时间：<b><span id="titaniumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="titaniumStorageCost">50</span> Titanium, <span id="titaniumStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="titaniumStorageCost">50</span> Titanium, <span id="titaniumStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2186,7 +2186,7 @@
 										<br>
 										Produces 1 Titanium per second.
 										<br>
-										Costs <span id="explorerGemCost">1,000</span> Gems.
+										造价：<span id="explorerGemCost">1,000</span> Gems.
 									</span>
 									<br>
 									<br>
@@ -2206,7 +2206,7 @@
 										<br>
 										Uses 13 Energy per second.
 										<br>
-										Costs <span id="lunariteDrillLunariteCost">200</span> Lunarite, <span id="lunariteDrillGemCost">800</span> Gems, <span id="lunariteDrillOilCost">1,000</span> Oil.
+										造价：<span id="lunariteDrillLunariteCost">200</span> Lunarite, <span id="lunariteDrillGemCost">800</span> Gems, <span id="lunariteDrillOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2226,7 +2226,7 @@
 										<br>
 										Uses 46 Energy per second.
 										<br>
-										Costs <span id="pentaDrillLunariteCost">14,000</span> Lunarite, <span id="pentaDrillGemCost">11,000</span> Gems, <span id="pentaDrillSiliconCost">5,600</span> Silicon.
+										造价：<span id="pentaDrillLunariteCost">14,000</span> Lunarite, <span id="pentaDrillGemCost">11,000</span> Gems, <span id="pentaDrillSiliconCost">5,600</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2246,7 +2246,7 @@
 										<br>
 										Uses 123 Energy per second.
 										<br>
-										Costs <span id="titanDrillLunariteCost">63,000</span> Lunarite, <span id="titanDrillGoldCost">27,000</span> Gold, <span id="titanDrillMeteoriteCost">600</span> Meteorite.
+										造价：<span id="titanDrillLunariteCost">63,000</span> Lunarite, <span id="titanDrillGoldCost">27,000</span> Gold, <span id="titanDrillMeteoriteCost">600</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2266,7 +2266,7 @@
 										<br>
 										Uses 690 Energy per second.
 										<br>
-										Costs <span id='clubUraniumCost'>175000</span> Uranium, <span id='clubWoodCost'>164000</span> Wood, <span id='clubHeliumCost'>156000</span> Helium.
+										造价：<span id='clubUraniumCost'>175000</span> Uranium, <span id='clubWoodCost'>164000</span> Wood, <span id='clubHeliumCost'>156000</span> Helium.
 									</span>
 									<br>
 									<br>
@@ -2305,9 +2305,9 @@
 									<span>
 										Upgrade your Gold storage size to <span id="goldNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="goldLimitType">full</span> storage: <b><span id="goldLimitTime">N/A</span></b>
+										<span id="goldLimitType">满载</span>所需时间：<b><span id="goldLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="goldStorageCost">50</span> Gold, <span id="goldStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="goldStorageCost">50</span> Gold, <span id="goldStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2324,7 +2324,7 @@
 										<br>
 										Produces 1 Gold per second.
 										<br>
-										Costs <span id="droidLunariteCost">200</span> Lunarite, <span id="droidMethaneCost">50</span> Methane.
+										造价：<span id="droidLunariteCost">200</span> Lunarite, <span id="droidMethaneCost">50</span> Methane.
 									</span>
 									<br>
 									<br>
@@ -2344,7 +2344,7 @@
 										<br>
 										Uses 19 Energy per second.
 										<br>
-										Costs <span id="destroyerLunariteCost">500</span> Lunarite, <span id="destroyerGemCost">1,500</span> Gems, <span id="destroyerOilCost">1,000</span> Oil.
+										造价：<span id="destroyerLunariteCost">500</span> Lunarite, <span id="destroyerGemCost">1,500</span> Gems, <span id="destroyerOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2364,7 +2364,7 @@
 										<br>
 										Uses 81 Energy per second.
 										<br>
-										Costs <span id="deathStarLunariteCost">17,000</span> Lunarite, <span id="deathStarSilverCost">11,500</span> Silver, <span id="deathStarSiliconCost">8,200</span> Silicon.
+										造价：<span id="deathStarLunariteCost">17,000</span> Lunarite, <span id="deathStarSilverCost">11,500</span> Silver, <span id="deathStarSiliconCost">8,200</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2384,7 +2384,7 @@
 										<br>
 										Uses 223 Energy per second.
 										<br>
-										Costs <span id="actuatorLunariteCost">61,000</span> Lunarite, <span id="actuatorHeliumCost">15,700</span> Helium, <span id="actuatorMeteoriteCost">600</span> Meteorite.
+										造价：<span id="actuatorLunariteCost">61,000</span> Lunarite, <span id="actuatorHeliumCost">15,700</span> Helium, <span id="actuatorMeteoriteCost">600</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2404,7 +2404,7 @@
 										<br>
 										Uses 1324 Energy per second.
 										<br>
-										Costs <span id='philosopherMetalCost'>208000</span> Metal, <span id='philosopherSilverCost'>167000</span> Silver, <span id='philosopherMeteoriteCost'>18000</span> Meterorite.
+										造价：<span id='philosopherMetalCost'>208000</span> Metal, <span id='philosopherSilverCost'>167000</span> Silver, <span id='philosopherMeteoriteCost'>18000</span> Meterorite.
 									</span>
 									<br>
 									<br>
@@ -2421,10 +2421,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Silver
+										银
 									</h2>
 									<span>
-										Silver is another metal most commonly found in the asteroid belt.
+										富集于小行星带之中的一种金属材料。
 									</span>
 									<hide class="gainButton">
 									<br>
@@ -2443,9 +2443,9 @@
 									<span>
 										Upgrade your silver storage size to <span id="silverNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="silverLimitType">full</span> storage: <b><span id="silverLimitTime">N/A</span></b>
+										<span id="silverLimitType">满载</span>所需时间：<b><span id="silverLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="silverStorageCost">50</span> Silver, <span id="silverStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="silverStorageCost">50</span> Silver, <span id="silverStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2462,7 +2462,7 @@
 										<br>
 										Produces 1 silver per second.
 										<br>
-										Costs <span id="scoutLunariteCost">100</span> Lunarite, <span id="scoutTitaniumCost">20</span> Titanium.
+										造价：<span id="scoutLunariteCost">100</span> Lunarite, <span id="scoutTitaniumCost">20</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -2482,7 +2482,7 @@
 										<br>
 										Uses 24 Energy per second.
 										<br>
-										Costs <span id="spaceLaserLunariteCost">350</span> Lunarite, <span id="spaceLaserGemCost">900</span> Gems, <span id="spaceLaserOilCost">1,200</span> Oil.
+										造价：<span id="spaceLaserLunariteCost">350</span> Lunarite, <span id="spaceLaserGemCost">900</span> Gems, <span id="spaceLaserOilCost">1,200</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2502,7 +2502,7 @@
 										<br>
 										Uses 65 Energy per second.
 										<br>
-										Costs <span id="berthaLunariteCost">19,500</span> Lunarite, <span id="berthaTitaniumCost">18,200</span> Titanium, <span id="berthaSiliconCost">11,000</span> Silicon.
+										造价：<span id="berthaLunariteCost">19,500</span> Lunarite, <span id="berthaTitaniumCost">18,200</span> Titanium, <span id="berthaSiliconCost">11,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2522,7 +2522,7 @@
 										<br>
 										Uses 170 Energy per second.
 										<br>
-										Costs <span id="cannonLunariteCost">85,100</span> Lunarite, <span id="cannonOilCost">93,800</span> Oil, <span id="cannonMeteoriteCost">520</span> Meteorite.
+										造价：<span id="cannonLunariteCost">85,100</span> Lunarite, <span id="cannonOilCost">93,800</span> Oil, <span id="cannonMeteoriteCost">520</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2542,7 +2542,7 @@
 										<br>
 										Uses 1008 Energy per second.
 										<br>
-										Costs <span id='werewolfUraniumCost'>165000</span> Uranium, <span id='werewolfGemCost'>209000</span> Gems, <span id='werewolfMethaneCost'>170000</span> Methane.
+										造价：<span id='werewolfUraniumCost'>165000</span> Uranium, <span id='werewolfGemCost'>209000</span> Gems, <span id='werewolfMethaneCost'>170000</span> Methane.
 									<br>
 									<br>
 									<button onclick="getWerewolf()" class="btn btn-default">Get Dead Werewolf Finder</button>
@@ -2580,9 +2580,9 @@
 									<span>
 										Upgrade your Lava storage size to <span id="lavaNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="lavaLimitType">full</span> storage: <b><span id="lavaLimitTime">N/A</span></b>
+										<span id="lavaLimitType">满载</span>所需时间：<b><span id="lavaLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="lavaStorageCost">50</span> Lava, <span id="lavaStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="lavaStorageCost">50</span> Lava, <span id="lavaStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2599,7 +2599,7 @@
 										<br>
 										Produces 1 Lava per second.
 										<br>
-										Costs <span id="crucibleGemCost">7,000</span> Gems, <span id="crucibleLunariteCost">4,000</span> Lunarite.
+										造价：<span id="crucibleGemCost">7,000</span> Gems, <span id="crucibleLunariteCost">4,000</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2619,7 +2619,7 @@
 										<br>
 										Uses 58 Energy per second.
 										<br>
-										Costs <span id="extractorLunariteCost">16,000</span> Lunarite, <span id="extractorTitaniumCost">14,000</span> Titanium, <span id="extractorSiliconCost">6,000</span> Silicon.
+										造价：<span id="extractorLunariteCost">16,000</span> Lunarite, <span id="extractorTitaniumCost">14,000</span> Titanium, <span id="extractorSiliconCost">6,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2639,7 +2639,7 @@
 										<br>
 										Uses 237 Energy per second.
 										<br>
-										Costs <span id="extruderLunariteCost">69,000</span> Lunarite, <span id="extruderTitaniumCost">57,000</span> Titanium, <span id="extruderSiliconCost">39,000</span> Silicon.
+										造价：<span id="extruderLunariteCost">69,000</span> Lunarite, <span id="extruderTitaniumCost">57,000</span> Titanium, <span id="extruderSiliconCost">39,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2659,7 +2659,7 @@
 										<br>
 										Uses 689 Energy per second.
 										<br>
-										Costs <span id="veluptuatorLunariteCost">298,000</span> Lunarite, <span id="veluptuatorGoldCost">121,000</span> Gold, <span id="veluptuatorMeteoriteCost">750</span> Meteorite.
+										造价：<span id="veluptuatorLunariteCost">298,000</span> Lunarite, <span id="veluptuatorGoldCost">121,000</span> Gold, <span id="veluptuatorMeteoriteCost">750</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2679,7 +2679,7 @@
 										<br>
 										Uses 4142 Energy per second.
 										<br>
-										Costs <span id='condensatorLunariteCost'>288000</span> Lunarite, <span id='condensatorGemCost'>210000</span> Gems, <span id='condensatorIceCost'>238000</span> Ice.
+										造价：<span id='condensatorLunariteCost'>288000</span> Lunarite, <span id='condensatorGemCost'>210000</span> Gems, <span id='condensatorIceCost'>238000</span> Ice.
 									</span>
 									<br>
 									<br>
@@ -2718,9 +2718,9 @@
 									<span>
 										Upgrade your Hydrogen storage size to <span id="hydrogenNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="hydrogenLimitType">full</span> storage: <b><span id="hydrogenLimitTime">N/A</span></b>
+										<span id="hydrogenLimitType">满载</span>所需时间：<b><span id="hydrogenLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="hydrogenStorageCost">50</span> Hydrogen, <span id="hydrogenStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="hydrogenStorageCost">50</span> Hydrogen, <span id="hydrogenStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2737,7 +2737,7 @@
 										<br>
 										Produces 1 Hydrogen per second.
 										<br>
-										Costs <span id="collectorLunariteCost">6,000</span> Lunarite, <span id="collectorTitaniumCost">4,800</span> Titanium.
+										造价：<span id="collectorLunariteCost">6,000</span> Lunarite, <span id="collectorTitaniumCost">4,800</span> Titanium.
 									</span>
 									<br>
 									<br>
@@ -2757,7 +2757,7 @@
 										<br>
 										Uses 63 Energy per second.
 										<br>
-										Costs <span id="magnetLunariteCost">10,800</span> Lunarite, <span id="magnetTitaniumCost">9,600</span> Titanium, <span id="magnetGoldCost">6,600</span> Gold.
+										造价：<span id="magnetLunariteCost">10,800</span> Lunarite, <span id="magnetTitaniumCost">9,600</span> Titanium, <span id="magnetGoldCost">6,600</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -2777,7 +2777,7 @@
 										<br>
 										Uses 234 Energy per second.
 										<br>
-										Costs <span id="eCellSilverCost">37,200</span> Silver, <span id="eCellGoldCost">34,200</span> Gold, <span id="eCellSiliconCost">25,800</span> Silicon.
+										造价：<span id="eCellSilverCost">37,200</span> Silver, <span id="eCellGoldCost">34,200</span> Gold, <span id="eCellSiliconCost">25,800</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2797,7 +2797,7 @@
 										<br>
 										Uses 613 Energy per second.
 										<br>
-										Costs <span id="hindenburgLunariteCost">172,000</span> Lunarite, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> Meteorite.
+										造价：<span id="hindenburgLunariteCost">172,000</span> Lunarite, <span id="hindenburgMethaneCost">134,000</span> Methane, <span id="hindenburgMeteoriteCost">710</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2817,7 +2817,7 @@
 										<br>
 										Uses 3562 Energy per second.
 										<br>
-										Costs <span id='harvesterLunariteCost'>250000</span> Lunarite, <span id='harvesterWoodCost'>184000</span> Wood, <span id='harvesterOilCost'>146000</span> Oil.
+										造价：<span id='harvesterLunariteCost'>250000</span> Lunarite, <span id='harvesterWoodCost'>184000</span> Wood, <span id='harvesterOilCost'>146000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -2856,9 +2856,9 @@
 									<span>
 										Upgrade your Helium storage size to <span id="heliumNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="heliumLimitType">full</span> storage: <b><span id="heliumLimitTime">N/A</span></b>
+										<span id="heliumLimitType">满载</span>所需时间：<b><span id="heliumLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="heliumStorageCost">50</span> Helium, <span id="heliumStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="heliumStorageCost">50</span> Helium, <span id="heliumStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -2875,7 +2875,7 @@
 										<br>
 										Produces 1 Helium per second.
 										<br>
-										Costs <span id="droneLunariteCost">8,400</span> Lunarite, <span id="droneSiliconCost">6,000</span> Silicon.
+										造价：<span id="droneLunariteCost">8,400</span> Lunarite, <span id="droneSiliconCost">6,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2895,7 +2895,7 @@
 										<br>
 										Uses 72 Energy per second.
 										<br>
-										Costs <span id="tankerLunariteCost">12,600</span> Lunarite, <span id="tankerTitaniumCost">10,200</span> Titanium, <span id="tankerSiliconCost">8,400</span> Silicon.
+										造价：<span id="tankerLunariteCost">12,600</span> Lunarite, <span id="tankerTitaniumCost">10,200</span> Titanium, <span id="tankerSiliconCost">8,400</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2915,7 +2915,7 @@
 										<br>
 										Uses 248 Energy per second.
 										<br>
-										Costs <span id="compressorLunariteCost">63,000</span> Lunarite, <span id="compressorTitaniumCost">43,800</span> Titanium, <span id="compressorSiliconCost">35,400</span> Silicon.
+										造价：<span id="compressorLunariteCost">63,000</span> Lunarite, <span id="compressorTitaniumCost">43,800</span> Titanium, <span id="compressorSiliconCost">35,400</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -2935,7 +2935,7 @@
 										<br>
 										Uses 670 Energy per second.
 										<br>
-										Costs <span id="skimmerLunariteCost">255,000</span> Lunarite, <span id="skimmerTitaniumCost">173,000</span> Titanium, <span id="skimmerMeteoriteCost">770</span> Meteorite.
+										造价：<span id="skimmerLunariteCost">255,000</span> Lunarite, <span id="skimmerTitaniumCost">173,000</span> Titanium, <span id="skimmerMeteoriteCost">770</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -2955,7 +2955,7 @@
 										<br>
 										Uses 4075 Energy per second.
 										<br>
-										Costs <span id='cageLunariteCost'>171000</span> Lunarite, <span id='cageSiliconCost'>165000</span> Silicon, <span id='cageMeteoriteCost'>18600</span> Meterorite.
+										造价：<span id='cageLunariteCost'>171000</span> Lunarite, <span id='cageSiliconCost'>165000</span> Silicon, <span id='cageMeteoriteCost'>18600</span> Meterorite.
 									</span>
 									<br>
 									<br>
@@ -2994,9 +2994,9 @@
 									<span>
 										Upgrade your Ice storage size to <span id="iceNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="iceLimitType">full</span> storage: <b><span id="iceLimitTime">N/A</span></b>
+										<span id="iceLimitType">满载</span>所需时间：<b><span id="iceLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="iceStorageCost">50</span> Ice, <span id="iceStorageLunariteCost">20</span> Lunarite.
+										造价：<span id="iceStorageCost">50</span> Ice, <span id="iceStorageLunariteCost">20</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -3013,7 +3013,7 @@
 										<br>
 										Produces 1 Ice per second.
 										<br>
-										Costs <span id="icePickLunariteCost">17,800</span> Lunarite, <span id="icePickGemCost">19,300</span> Gems.
+										造价：<span id="icePickLunariteCost">17,800</span> Lunarite, <span id="icePickGemCost">19,300</span> Gems.
 									</span>
 									<br>
 									<br>
@@ -3033,7 +3033,7 @@
 										<br>
 										Uses 83 Energy per second.
 										<br>
-										Costs <span id="iceDrillLunariteCost">23,900</span> Lunarite, <span id="iceDrillTitaniumCost">21,200</span> Titanium, <span id="iceDrillSiliconCost">19,600</span> Silicon.
+										造价：<span id="iceDrillLunariteCost">23,900</span> Lunarite, <span id="iceDrillTitaniumCost">21,200</span> Titanium, <span id="iceDrillSiliconCost">19,600</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -3053,7 +3053,7 @@
 										<br>
 										Uses 397 Energy per second.
 										<br>
-										Costs <span id="freezerLunariteCost">117,000</span> Lunarite, <span id="freezerTitaniumCost">86,000</span> Titanium, <span id="freezerSiliconCost">73,000</span> Silicon.
+										造价：<span id="freezerLunariteCost">117,000</span> Lunarite, <span id="freezerTitaniumCost">86,000</span> Titanium, <span id="freezerSiliconCost">73,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -3073,7 +3073,7 @@
 										<br>
 										Uses 1,135 Energy per second.
 										<br>
-										Costs <span id="mrFreezeWoodCost">379,000</span> Wood, <span id="mrFreezeHeliumCost">14,000</span> Helium, <span id="mrFreezeMeteoriteCost">1,500</span> Meteorite.
+										造价：<span id="mrFreezeWoodCost">379,000</span> Wood, <span id="mrFreezeHeliumCost">14,000</span> Helium, <span id="mrFreezeMeteoriteCost">1,500</span> Meteorite.
 									</span>
 									<br>
 									<br>
@@ -3093,7 +3093,7 @@
 										<br>
 										Uses 7397 Energy per second.
 										<br>
-										Costs <span id='overexchangeMetalCost'>210,000</span> Metal, <span id='overexchangeSilverCost'>188,000</span> Silver, <span id='overexchangeHeliumCost'>205,000</span> Helium.
+										造价：<span id='overexchangeMetalCost'>210,000</span> Metal, <span id='overexchangeSilverCost'>188,000</span> Silver, <span id='overexchangeHeliumCost'>205,000</span> Helium.
 									</span>
 									<br>
 									<br>
@@ -3135,9 +3135,9 @@
 									<span>
 										Upgrade your Meteorite storage size to <span id="meteoriteNextStorage">100</span>.
 										<br>
-										Time remaining until <span id="meteoriteLimitType">full</span> storage: <b><span id="meteoriteLimitTime">N/A</span></b>
+										<span id="meteoriteLimitType">满载</span>所需时间：<b><span id="meteoriteLimitTime">N/A</span></b>
 										<br>
-										Costs <span id="meteoriteStorageCost">50</span> Meteorite, <span id="meteoriteStorageLunariteCost">400</span> Lunarite.
+										造价：<span id="meteoriteStorageCost">50</span> Meteorite, <span id="meteoriteStorageLunariteCost">400</span> Lunarite.
 									</span>
 									<br>
 									<br>
@@ -3154,7 +3154,7 @@
 										<br>
 										Produces 1 Meteorite per second. Uses 3 Plasma per second.
 										<br>
-										Costs <span id="printerLunariteCost">100,000</span> Lunarite, <span id="printerSiliconCost">60,000</span> Silicon.
+										造价：<span id="printerLunariteCost">100,000</span> Lunarite, <span id="printerSiliconCost">60,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -3172,7 +3172,7 @@
 										<br>
 										Produces 8 Meteorite per second. Uses 21 Plasma per second.
 										<br>
-										Costs <span id="webLunariteCost">940,000</span> Lunarite, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> Silicon.
+										造价：<span id="webLunariteCost">940,000</span> Lunarite, <span id="webUraniumCost">490,000</span> Uranium, <span id="webSiliconCost">510,000</span> Silicon.
 									</span>
 									<br>
 									<br>
@@ -3190,7 +3190,7 @@
 										<br>
 										Produces 72 Meteorite per second. Uses 111 Plasma per second.
 										<br>
-										Costs <span id="smasherSiliconCost">3.23M</span> Silicon, <span id="smasherSilverCost">5.89M</span> Silver, <span id="smasherGemCost">8.34M</span> Gems.
+										造价：<span id="smasherSiliconCost">3.23M</span> Silicon, <span id="smasherSilverCost">5.89M</span> Silver, <span id="smasherGemCost">8.34M</span> Gems.
 									</span>
 									<br>
 									<br>
@@ -3208,7 +3208,7 @@
 										<br>
 										Produces 135 Meteorite per second. Uses 142 Plasma per second.
 										<br>
-										Costs <span id="nebulousLunariteCost">25.8M</span> Lunarite, <span id="nebulousLavaCost">19.7M</span> Lava, <span id="nebulousGoldCost">21.9M</span> Gold.
+										造价：<span id="nebulousLunariteCost">25.8M</span> Lunarite, <span id="nebulousLavaCost">19.7M</span> Lava, <span id="nebulousGoldCost">21.9M</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -3284,7 +3284,7 @@
 										<br>
 										Each one produces 0.1 science per second.
 										<br>
-										Costs <span id="labMetalCost">20</span> Metal, <span id="labGemCost">15</span> Gems, <span id="labWoodCost">10</span> Wood.
+										造价：<span id="labMetalCost">20</span> Metal, <span id="labGemCost">15</span> Gems, <span id="labWoodCost">10</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -3303,7 +3303,7 @@
 										<br>
 										Each one produces 1 science per second.
 										<br>
-										Costs <span id="labT2MetalCost">1,000</span> Metal, <span id="labT2GemCost">200</span> Gems, <span id="labT2WoodCost">500</span> Wood.
+										造价：<span id="labT2MetalCost">1,000</span> Metal, <span id="labT2GemCost">200</span> Gems, <span id="labT2WoodCost">500</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -3322,7 +3322,7 @@
 										<br>
 										Each one produces 10 science per second.
 										<br>
-										Costs <span id="labT3MetalCost">17,000</span> Metal, <span id="labT3GemCost">4,700</span> Gems, <span id="labT3WoodCost">9,600</span> Wood.
+										造价：<span id="labT3MetalCost">17,000</span> Metal, <span id="labT3GemCost">4,700</span> Gems, <span id="labT3WoodCost">9,600</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -3339,7 +3339,7 @@
 										<br>
 										Each one produces 100 science per second.
 										<br>
-										Costs <span id="labT4MetalCost">610,000</span> Metal, <span id="labT4GemCost">370,000</span> Gems, <span id="labT4WoodCost">926,000</span> Wood.
+										造价：<span id="labT4MetalCost">610,000</span> Metal, <span id="labT4GemCost">370,000</span> Gems, <span id="labT4WoodCost">926,000</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -3356,7 +3356,7 @@
 										<br>
 										Each one produces 1000 science per second.
 										<br>
-										Costs <span id="labT5MetalCost">12.40M</span> Metal, <span id="labT5GemCost">7.30M</span> Gems, <span id="labT5WoodCost">15.90M</span> Wood.
+										造价：<span id="labT5MetalCost">12.40M</span> Metal, <span id="labT5GemCost">7.30M</span> Gems, <span id="labT5WoodCost">15.90M</span> Wood.
 									</span>
 									<br>
 									<br>
@@ -3593,7 +3593,7 @@
 										<br>
 										They produce 0.2 Rocket Fuel per second.
 										<br>
-										Costs <span id="chemicalPlantMetalCost">1,000</span> Metal, <span id="chemicalPlantGemCost">750</span> Gems, <span id="chemicalPlantOilCost">500</span> Oil.
+										造价：<span id="chemicalPlantMetalCost">1,000</span> Metal, <span id="chemicalPlantGemCost">750</span> Gems, <span id="chemicalPlantOilCost">500</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -3615,7 +3615,7 @@
 										<br>
 										They produce 1.5 Rocket Fuel per second.
 										<br>
-										Costs <span id="oxidisationMetalCost">12,000</span> Metal, <span id="oxidisationGemCost">8,300</span> Gems, <span id="oxidisationOilCost">6,800</span> Oil.
+										造价：<span id="oxidisationMetalCost">12,000</span> Metal, <span id="oxidisationGemCost">8,300</span> Gems, <span id="oxidisationOilCost">6,800</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -3637,7 +3637,7 @@
 										<br>
 										They produce 20 Rocket Fuel per second.
 										<br>
-										Costs <span id="hydrazineTitaniumCost">140,000</span> Titanium, <span id="hydrazineSiliconCost">96,300</span> Silicon, <span id="hydrazineGoldCost">78,600</span> Gold.
+										造价：<span id="hydrazineTitaniumCost">140,000</span> Titanium, <span id="hydrazineSiliconCost">96,300</span> Silicon, <span id="hydrazineGoldCost">78,600</span> Gold.
 									</span>
 									<br>
 									<br>
@@ -3675,7 +3675,7 @@
 									<span>
 										To launch the rocket into space, it must first be built.
 										<br>
-										Costs <span id="rocketMetalCost">1,200</span> Metal, <span id="rocketGemCost">900</span> Gems, <span id="rocketOilCost">1,000</span> Oil.
+										造价：<span id="rocketMetalCost">1,200</span> Metal, <span id="rocketGemCost">900</span> Gems, <span id="rocketOilCost">1,000</span> Oil.
 									</span>
 									<br>
 									<br>
@@ -3727,7 +3727,7 @@
 									<span>
 										Exploring the Moon will unlock the collection of Lunarite.
 										<br>
-										Costs <span id="moonRocketFuelCost">20</span> rocket fuel.
+										造价：<span id="moonRocketFuelCost">20</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3780,7 +3780,7 @@
 									<span>
 										Exploring Venus will unlock methane and methane based power.
 										<br>
-										Costs <span id="venusRocketFuelCost">50</span> rocket fuel.
+										造价：<span id="venusRocketFuelCost">50</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3815,7 +3815,7 @@
 									<span>
 										Exploring Mars unlocks Titanium production, which allows you to harvest Silicon on Earth and to build Methane power plants.
 										<br>
-										Costs <span id="marsRocketFuelCost">80</span> rocket fuel.
+										造价：<span id="marsRocketFuelCost">80</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3850,7 +3850,7 @@
 									<span>
 										Exploring the asteroid belt gives you access to Gold and Silver.
 										<br>
-										Costs <span id="asteroidBeltRocketFuelCost">200</span> rocket fuel.
+										造价：<span id="asteroidBeltRocketFuelCost">200</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3885,7 +3885,7 @@
 									<span>
 										Exploring the Wonder Station will gives you access to Wonders and allow you to continue your research and travel even further than before.
 										<br>
-										Costs <span id="wonderStationRocketFuelCost">500</span> rocket fuel.
+										造价：<span id="wonderStationRocketFuelCost">500</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3920,7 +3920,7 @@
 									<span>
 										Exploring Jupiter gives you access to Hydrogen.
 										<br>
-										Costs <span id="jupiterRocketFuelCost">1000</span> rocket fuel.
+										造价：<span id="jupiterRocketFuelCost">1000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -3955,7 +3955,7 @@
 									<span>
 										Exploring Saturn gives you access to Helium.
 										<br>
-										Costs <span id="saturnRocketFuelCost">2000</span> rocket fuel.
+										造价：<span id="saturnRocketFuelCost">2000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -4026,7 +4026,7 @@
 									<span>
 										No-one knows what lies near and around pluto as it is so far away. On there surface, there is almost only ice, but maybe an exploration will teach us more about the unknown.
 										<br>
-										Costs <span id="plutoRocketFuelCost">5000</span> rocket fuel.
+										造价：<span id="plutoRocketFuelCost">5000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -4061,7 +4061,7 @@
 									<span>
 										Exploring the Kuiper Belt gives you access to the hidden base
 										<br>
-										Costs <span id="kuiperBeltRocketFuelCost">6000</span> rocket fuel.
+										造价：<span id="kuiperBeltRocketFuelCost">6000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
@@ -4096,7 +4096,7 @@
 									<span>
 										Exploring the Sol Center gives you access to the hidden base.
 										<br>
-										Costs <span id="solCenterRocketFuelCost">7000</span> rocket fuel.
+										造价：<span id="solCenterRocketFuelCost">7000</span> rocket fuel.
 									</span>
 									<br>
 									<br>
