@@ -171,8 +171,8 @@ Game.prestigeData = (function(){
 	**************/
 
 	instance.empowerManualGains = {
-		name: "Empower Manual Gains",
-		desc: "Increase all gain buttons to 20 per click instead of 1.",
+		name: "加强手动获取",
+		desc: "将每次点击手动获取按钮得到的材料数从 1 提升至 20。",
 		cost: 5,
 		category: "carnelian",
 		opinion: 3,

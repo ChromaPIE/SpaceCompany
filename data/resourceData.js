@@ -21,7 +21,7 @@ Game.resourceCategoryData = (function () {
 
     instance.outerSol = {
         class: 'collapseOuterPlanetary',
-        title: 'Outer Planetary Resources',
+        title: '远地行星资源',
         category: 'outerSol'
     };
 
@@ -223,8 +223,8 @@ Game.resourceData = (function () {
     };
 
     instance.science = {
-        name: 'Science Production',
-        desc: 'Science is used for researching new technologies to further your progress in the game.',
+        name: '科学点产出',
+        desc: '新型科技的研究和游戏进程的发展均需要消耗科学点来执行。',
         icon: 'scienceIcon',
         baseCapacity: 1000000,
         unlocked: false

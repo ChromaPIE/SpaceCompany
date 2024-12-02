@@ -78,7 +78,7 @@
 					<img src="SpaceCompanyFavicon.png" style="width:40px; height:auto; margin-top:-30%;">
 				</a>
 				<a class="navbar-brand page-title" href="#">
-					<span id="companyName">Space</span> Company
+					<span id="companyName">太空</span>公司
 				</a>
 				<a class="navbar-brand" ng-href="" target="_blank" href="https://github.com/sparticle999/SpaceCompany#changelog">
 					<span id="versionLabel" class="text-muted small ng-binding"></span>
@@ -472,7 +472,7 @@
 					</tr>
 					<tr id="collapseOuterPlanet" class="collapseOuterPlanet hidden">
 						<td colspan="4">
-							<span>Outer Planetary Resources</span> <span class="caret"></span>
+							<span>远地行星资源</span> <span class="caret"></span>
 						</td>
 					</tr>
 					<tr id="hydrogenNav" onclick="activeResourceTab('hydrogenNav')" class="sideTab hidden" href="#hydrogenTab" aria-controls="hydrogenTab" role="tab" data-toggle="tab" style="height:60px;">
@@ -1192,7 +1192,7 @@
 										<br>
 										<span id="metalLimitType">满载</span>所需时间：<b><span id="metalLimitTime">N/A</span></b>
 										<br>
-										造价：<span id="metalStorageCost">50</span> Metal.
+										造价：<span id="metalStorageCost">50</span> 块金属。
 									</span>
 									<br>
 									<br>
@@ -3232,7 +3232,7 @@
 						</td>
 						<td style="border:none; vertical-align:middle;">
 							<span>
-								Science Production
+								科学点产出
 							</span>
 						</td>
 						<td style="border:none; vertical-align:middle; text-align:center;">
@@ -3265,10 +3265,10 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Science Production
+										科学点产出
 									</h2>
 									<span>
-										Science is used for researching new technologies to further your progress in the game.
+										新型科技的研究和游戏进程的发展均需要消耗科学点来执行。
 									</span>
 									<br>
 									<br>
@@ -6553,7 +6553,7 @@
 					<tr href="#uiTab" aria-controls="uiTab" role="tab" data-toggle="tab" style="height:60px;" class="sideTab">
 						<td style="vertical-align:middle;">
 							<span>
-								Graphics Options
+								图像设置
 							</span>
 						</td>
 					</tr>
@@ -6682,7 +6682,7 @@
 							<tr>
 								<td style="border:none;">
 									<h2 class="default btn-link">
-										Graphics Options
+										图像设置
 									</h2>
 									<span>
 										You can enable settings to change the interface here.
@@ -6692,47 +6692,47 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Themes
+										界面主题
 									</h3>
 				                	<select id="themeSelector" ng-model="player.current_theme" class="ng-valid ng-touched ng-dirty ng-valid-parse">
-				                		<option value="base">Base</option>
-				                		<option value="cerulean">Cerulean</option>
-				                		<option value="cyborg">Cyborg</option>
-				                		<option value="cyborg2">Cyborg V2</option>
-				                		<option value="darkly">Darkly</option>
-				                		<option value="flatly">Flatly</option>
-				                		<option value="paper">Paper</option>
-				                		<option value="readable">Readable</option>
-				                		<option value="simplex">Simplex</option>
-				                		<option value="solar">Solar</option>
-				                		<option value="spacelab">Spacelab</option>
-				                		<option value="united">United</option>
+				                		<option value="base">基础</option>
+				                		<option value="cerulean">蔚蓝</option>
+				                		<option value="cyborg">赛博格</option>
+				                		<option value="cyborg2">赛博格 V2</option>
+				                		<option value="darkly">暗黑</option>
+				                		<option value="flatly">扁平</option>
+				                		<option value="paper">文件</option>
+				                		<option value="readable">易读</option>
+				                		<option value="simplex">简约</option>
+				                		<option value="solar">日光</option>
+				                		<option value="spacelab">太空实验室</option>
+				                		<option value="united">统一</option>
 				                	</select>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Notation
+										记数法
 									</h3>
 									<select id="formatSelector" ng-model="player.current_theme" class="ng-valid ng-touched ng-dirty ng-valid-parse">
-										<option value="raw">Raw</option>
-										<option value="rounded">Rounded</option>
-										<option value="name">Name</option>
-										<option value="shortName" selected>Short Name</option>
-										<option value="shortName2">Short Name (2)</option>
-										<option value="scientific">Scientific (*10^n)</option>
-										<option value="scientific2">Scientific (E+n)</option>
+										<option value="raw">纯文本</option>
+										<option value="rounded">取整</option>
+										<option value="name">单位名</option>
+										<option value="shortName" selected>短单位名</option>
+										<option value="shortName2">短单位名（2）</option>
+										<option value="scientific">科学记数法（*10^n）</option>
+										<option value="scientific2">科学记数法（E+n）</option>
 									</select>
 								</td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Change Company Name
+										更改公司名称
 									</h3>
 				                	<div class="checkbox">
-										<input type="text" name="companyName"> Company <input type="submit" value="Submit">
+										<input type="text" name="companyName">公司 <input type="submit" value="提交">
 									</div>
 				                </td>
 							</tr>
@@ -6779,30 +6779,30 @@
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Gain Buttons
+										手动获取按钮
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="gainButtonsHidden" type="checkbox" value="">Gain Buttons Hidden</label>
+										<label><input id="gainButtonsHidden" type="checkbox" value="">隐藏手动获取按钮</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Coloured Destroy Buttons
+										红色拆毁按钮
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="redDestroyButtons" type="checkbox" value="">Destroy Buttons Red</label>
+										<label><input id="redDestroyButtons" type="checkbox" value="">将拆毁按钮改为红色</label>
 									</div>
 				                </td>
 							</tr>
 							<tr>
 								<td>
 									<h3 class="default btn-link">
-										Hide Completed Tabs
+										隐藏已完成的标签页
 									</h3>
 				                	<div class="checkbox">
-										<label><input id="hideCompleted" type="checkbox" value="">Hidden</label>
+										<label><input id="hideCompleted" type="checkbox" value="">隐藏</label>
 									</div>
 				                </td>
 							</tr>
