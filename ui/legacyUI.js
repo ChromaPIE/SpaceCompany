@@ -530,11 +530,11 @@ function legacyRefreshUI() {
         $('#buildSphereButton').show();
     }
 
-    $('#heaterToggled').text(heaterToggled === true ? "Off" : "On");
-    $('#plasmaticToggled').text(plasmaticToggled === true ? "Off" : "On");
-    $('#bathToggled').text(bathToggled === true ? "Off" : "On");
-    $('#charcoalToggled').text(charcoalToggled === true ? "Off" : "On");
-    $('#rocketFuelToggled').text(rocketFuelToggled === true ? "Off" : "On");
-    $('#meteoriteToggled').text(meteoriteToggled === true ? "Off" : "On");
-    $('#antimatterToggled').text(antimatterToggled === true ? "Off" : "On");
+    $('#heaterToggled').text(heaterToggled === true ? "关闭" : "开启");
+    $('#plasmaticToggled').text(plasmaticToggled === true ? "关闭" : "开启");
+    $('#bathToggled').text(bathToggled === true ? "关闭" : "开启");
+    $('#charcoalToggled').text(charcoalToggled === true ? "关闭" : "开启");
+    $('#rocketFuelToggled').text(rocketFuelToggled === true ? "关闭" : "开启");
+    $('#meteoriteToggled').text(meteoriteToggled === true ? "关闭" : "开启");
+    $('#antimatterToggled').text(antimatterToggled === true ? "关闭" : "开启");
 }
